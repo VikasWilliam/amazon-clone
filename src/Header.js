@@ -29,6 +29,7 @@ export const Header = () => {
             </div>
 
             <div className='header_nav'>
+                <Link to="/login">
                 <div className='header_option'>
                     <span className='header_optionLineOne'>
                         Hello Guest
@@ -36,8 +37,11 @@ export const Header = () => {
                     <span className='header_optionLineTwo'>
                         Sign in
                     </span>
+                   
 
                 </div>
+                </Link>
+               
                 <div className='header_option'>
                     <span className='header_optionLineOne'>
                         Returns

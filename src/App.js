@@ -3,20 +3,23 @@ import './App.css';
 import { Checkout } from './Checkout';
 import Header from './Header';
 import { Home } from './Home';
+import Login from './Login';
 
 
 function App() {
   return (
     <div className="App">
       <Router>
-      <Header />
         <Switch>
-        <Route path="/checkout">
-          
-            <Checkout/>
+          <Route path="/checkout">
+          <Header />
+            <Checkout />
+          </Route>
+          <Route path="/login">
+            <Login />
           </Route>
           <Route path="/">
-          
+          <Header />
             <Home />
           </Route>
         </Switch>
